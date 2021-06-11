@@ -76,13 +76,13 @@ class MainActivity : AppCompatActivity() {
         val alert = AlertDialog.Builder(this)
 
         val edtDetail = EditText(applicationContext)
-        edtDetail.setText(detail.kondisiMotor)
+        edtDetail.setText(detail.solusiMotor)
 
         alert.setTitle("Edit Detail")
         alert.setView(edtDetail)
 
         alert.setPositiveButton("Update"){dialog, _ ->
-            detail.kondisiMotor = edtDetail.text.toString()
+            detail.solusiMotor = edtDetail.text.toString()
             detailViewModel.updateDetail(detail)
             dialog.dismiss()
         }
@@ -95,8 +95,8 @@ class MainActivity : AppCompatActivity() {
     private fun share(detail: Detail){
         val intent: Intent = Intent().apply {
             action = Intent.ACTION_SEND
-            putExtra(Intent.EXTRA_TEXT, "${detail.namaMekanik} memeriksa motor dengan tipe " +
-                    "${detail.jenisMotor}, ${detail.namaMekanik} menyebut bahwa kondisi motor itu '${detail.kondisiMotor}'")
+            putExtra(Intent.EXTRA_TEXT, "Terkait permasalahan ${detail.masalahMotor}, ${detail.namaMekanik} menyarankan " +
+                    "'${detail.solusiMotor}'")
             type = "text/plain"
         }
         val i = Intent.createChooser(intent, null)

@@ -39,8 +39,8 @@ class DetailAdapter(private val context: Context?, private val listener: (Detail
 class DetailViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView){
     fun bindItem(context: Context, detail: Detail, listener: (Detail, Int) -> Unit) {
         itemView.tvNama.text = detail.namaMekanik
-        itemView.tvTipe.text = detail.jenisMotor
-        itemView.tvKondisi.text = detail.kondisiMotor
+        itemView.tvTipe.text = detail.masalahMotor
+        itemView.tvKondisi.text = detail.solusiMotor
         itemView.setOnClickListener{
             listener(detail, layoutPosition)
         }

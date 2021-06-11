@@ -29,8 +29,8 @@ class InputDialog : DialogFragment() {
     private fun addData() {
         detailViewModel.insertDetail(
             Detail(namaMekanik = edtNama.text.toString(),
-            jenisMotor = edtJenis.text.toString(),
-            kondisiMotor = edtKondisi.text.toString())
+            masalahMotor = edtJenis.text.toString(),
+            solusiMotor = edtKondisi.text.toString())
         )
     }
 

@@ -17,38 +17,82 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tvNama"
-            style="@style/rv_style"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:lines="1"
-            android:text="Nama Mekanik"
-            android:textStyle="bold" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tvTipe"
-            style="@style/rv_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:lines="1"
-            android:text="Jenis Motor"
-            android:textStyle="italic" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/rv_style"
+                android:text="Nama : "/>
 
-        <TextView
-            android:id="@+id/tvKondisi"
-            style="@style/rv_style"
+            <TextView
+                android:id="@+id/tvNama"
+                style="@style/rv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:lines="1"
+                android:text="Nama Mekanik"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:lines="3"
-            android:text="Kondisi Motor" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/rv_style"
+                android:text="Masalah : "/>
+
+            <TextView
+                android:id="@+id/tvTipe"
+                style="@style/rv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:lines="2"
+                android:text="Masalah"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/rv_style"
+                android:text="Solusi: "/>
+
+            <TextView
+                android:id="@+id/tvKondisi"
+                style="@style/rv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:lines="3"
+                android:text="Solusi" />
+
+        </LinearLayout>
+
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

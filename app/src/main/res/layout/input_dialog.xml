@@ -43,8 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:lines="1"
-            android:hint="Jenis Motor" />
+            android:lines="3"
+            android:hint="Masalah Motor" />
 
         <EditText
             android:id="@+id/edtKondisi"
@@ -54,7 +54,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:lines="3"
-            android:hint="Kondisi Motor" />
+            android:hint="Solusi" />
 
         <Button
             android:id="@+id/btnSimpan"

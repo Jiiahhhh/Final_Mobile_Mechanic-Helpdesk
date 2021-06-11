@@ -11,8 +11,8 @@ data class Detail (
     val id: Int? = null,
     @ColumnInfo(name = "Nama Mekanik")
     var namaMekanik: String,
-    @ColumnInfo(name = "Jenis Motor")
-    var jenisMotor: String,
-    @ColumnInfo(name = "Kondisi Motor")
-    var kondisiMotor: String
+    @ColumnInfo(name = "Masalah Motor")
+    var masalahMotor: String,
+    @ColumnInfo(name = "Solusi Motor")
+    var solusiMotor: String
 )
